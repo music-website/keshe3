@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-
+    <jsp:include page="head.jsp"></jsp:include>
     <h4>
         <c:if test="${empty information}">
             <%

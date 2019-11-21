@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-
+    <jsp:include page="head.jsp"></jsp:include>
     <h3>
         <%String message = request.getParameter("message"); %>
         <%=message%>
