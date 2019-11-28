@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>ostec</title>
-	<link href="css/head.css" rel="stylesheet">
+	<link href="css/headAndfoot.css" rel="stylesheet">
 </head>
 <body>
 	<jsp:include page="head.jsp"></jsp:include>
@@ -31,12 +31,6 @@
 		    </a>
 		</div>
 	</div>
-	<div id="footer">
-		<h6>
-			电子科技大学 信息与软件工程学院 <br> Outstanding
-			Engineer Experimental Education Center, School of Information and
-			Software Engineering, UESTC <br>
-		</h6>
-	</div>
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

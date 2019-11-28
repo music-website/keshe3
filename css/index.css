@@ -1,0 +1,5 @@
+img:hover{
+    transition: all 0.5s;
+    transform: scale(0.95);
+    transform-origin: center;
+}
