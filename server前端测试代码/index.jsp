@@ -3,6 +3,7 @@
 <head>
 	<title>ostec</title>
 	<link href="css/headAndfoot.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 	<jsp:include page="head.jsp"></jsp:include>

@@ -51,4 +51,5 @@ body{
 #text_div #text_content p{
     margin: 30px 0 0 0;
     white-space: pre-wrap;
+    font-size: 16px;
 }

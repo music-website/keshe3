@@ -10,6 +10,7 @@
 <head>
     <title>Title</title>
     <link href="css/headAndfoot.css" rel="stylesheet">
+<%--    <link href="css/common.css" rel="stylesheet">--%>
 </head>
 <body>
 <div id="header">

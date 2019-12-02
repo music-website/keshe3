@@ -34,21 +34,21 @@
     <img src="images/background1.png" id="image1">
     <div id="list_div">
         <ul>
-            <li><a href="#">第1条信息（具体多长我也不知道呀）。。。。。。。。。</a></li>
-            <li><a href="#">第2条信息</a></li>
-            <li><a href="#">第3条信息</a></li>
-            <li><a href="#">第4条信息</a></li>
-            <li><a href="#">第5条信息</a></li>
-            <li><a href="#">第6条信息</a></li>
-            <li><a href="#">第7条信息</a></li>
-            <li><a href="#">第8条信息</a></li>
-            <li><a href="#">第9条信息</a></li>
-            <li><a href="#">第10条信息</a></li>
-            <li><a href="#">第11条信息</a></li>
-            <li><a href="#">第12条信息</a></li>
-            <li><a href="#">第13条信息</a></li>
-            <li><a href="#">第14条信息</a></li>
-            <li><a href="#">第15条信息</a></li>
+            <li><a href="text.jsp"><p>第1条信息（具体多长我也不知道呀 不知道呀 不知道呀 不知道呀 不知道呀 white-space: nowrap）</p></a></li>
+            <li><a href="#"><p>第2条信息</p></a></li>
+            <li><a href="#"><p>第3条信息</p></a></li>
+            <li><a href="#"><p>第4条信息</p></a></li>
+            <li><a href="#"><p>第5条信息</p></a></li>
+            <li><a href="#"><p>第6条信息</p></a></li>
+            <li><a href="#"><p>第7条信息</p></a></li>
+            <li><a href="#"><p>第8条信息</p></a></li>
+            <li><a href="#"><p>第9条信息</p></a></li>
+            <li><a href="#"><p>第10条信息</p></a></li>
+            <li><a href="#"><p>第11条信息</p></a></li>
+            <li><a href="#"><p>第12条信息</p></a></li>
+            <li><a href="#"><p>第13条信息</p></a></li>
+            <li><a href="#"><p>第14条信息</p></a></li>
+            <li><a href="#"><p>第15条信息</p></a></li>
         </ul>
         <div id="page" class="page_div"></div>
     </div>
