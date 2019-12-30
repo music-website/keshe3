@@ -11,8 +11,10 @@
         </id>
 
         <property name="title" column="title"/>
-        <property name="text" column="text"/>
+        <property name="date" column="date"/>
         <property name="type" column="type"/>
+        <property name="context" column="context"/>
+        <property name="source" column="source"/>
 
     </class>
 </hibernate-mapping>

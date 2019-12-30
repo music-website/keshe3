@@ -34,7 +34,7 @@
     <img src="images/background1.png" id="image1">
     <div id="list_div">
         <ul>
-            <li><a href="text.jsp"><p>第1条信息（具体多长我也不知道呀 不知道呀 不知道呀 不知道呀 不知道呀 white-space: nowrap）</p></a></li>
+            <%--<li><a href="text.jsp"><p>第1条信息（具体多长我也不知道呀 不知道呀 不知道呀 不知道呀 不知道呀 white-space: nowrap）</p></a></li>
             <li><a href="#"><p>第2条信息</p></a></li>
             <li><a href="#"><p>第3条信息</p></a></li>
             <li><a href="#"><p>第4条信息</p></a></li>
@@ -48,7 +48,18 @@
             <li><a href="#"><p>第12条信息</p></a></li>
             <li><a href="#"><p>第13条信息</p></a></li>
             <li><a href="#"><p>第14条信息</p></a></li>
-            <li><a href="#"><p>第15条信息</p></a></li>
+            <li><a href="#"><p>第15条信息</p></a></li>--%>
+                <c:if test="${empty information}">
+                    <%
+                        out.write("没有了，亲");
+                    %>
+                </c:if>
+
+                <c:forEach items="${information}" var="info">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/text.jsp?date=${info.date}&source=${info.source}&context=${info.context}">${info.title}</a>
+                    </li>
+                </c:forEach>
         </ul>
         <div id="page" class="page_div"></div>
     </div>
