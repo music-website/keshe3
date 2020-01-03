@@ -14,52 +14,21 @@
     <link rel="stylesheet" href="css/pageStyle.css">
 </head>
 <body bgcolor="#F0F0F0">
-    <jsp:include page="head.jsp"></jsp:include>
-<%--    <h4>--%>
-<%--        <c:if test="${empty information}">--%>
-<%--            <%--%>
-<%--                out.write("没有了，亲");--%>
-<%--            %>--%>
-<%--        </c:if>--%>
-
-<%--        <c:forEach items="${information}" var="info">--%>
-<%--            <li>--%>
-<%--                <a href="${pageContext.request.contextPath}/text.jsp?message=${info.text}">${info.title}</a>--%>
-<%--            </li>--%>
-<%--        </c:forEach>--%>
-
-<%--    </h4>--%>
-
+<jsp:include page="head.jsp"></jsp:include>
 <div id="list">
     <img src="images/background1.png" id="image1">
     <div id="list_div">
         <ul>
-            <%--<li><a href="text.jsp"><p>第1条信息（具体多长我也不知道呀 不知道呀 不知道呀 不知道呀 不知道呀 white-space: nowrap）</p></a></li>
-            <li><a href="#"><p>第2条信息</p></a></li>
-            <li><a href="#"><p>第3条信息</p></a></li>
-            <li><a href="#"><p>第4条信息</p></a></li>
-            <li><a href="#"><p>第5条信息</p></a></li>
-            <li><a href="#"><p>第6条信息</p></a></li>
-            <li><a href="#"><p>第7条信息</p></a></li>
-            <li><a href="#"><p>第8条信息</p></a></li>
-            <li><a href="#"><p>第9条信息</p></a></li>
-            <li><a href="#"><p>第10条信息</p></a></li>
-            <li><a href="#"><p>第11条信息</p></a></li>
-            <li><a href="#"><p>第12条信息</p></a></li>
-            <li><a href="#"><p>第13条信息</p></a></li>
-            <li><a href="#"><p>第14条信息</p></a></li>
-            <li><a href="#"><p>第15条信息</p></a></li>--%>
-                <c:if test="${empty information}">
-                    <%
-                        out.write("没有了，亲");
-                    %>
-                </c:if>
-
-                <c:forEach items="${information}" var="info">
-                    <li>
-                        <a href="${pageContext.request.contextPath}/text.jsp?date=${info.date}&source=${info.source}&context=${info.context}">${info.title}</a>
-                    </li>
-                </c:forEach>
+            <c:if test="${empty information}">
+                <%
+                    out.write("没有了，亲");
+                %>
+            </c:if>
+            <c:forEach items="${information.currentTitle}" var="info">
+                <li>
+                    <a href="${pageContext.request.contextPath}/text.jsp?date=${info.date}&source=${info.source}&context=${info.context}">${info.title}</a>
+                </li>
+            </c:forEach>
         </ul>
         <div id="page" class="page_div"></div>
     </div>
@@ -71,11 +40,11 @@
 <script type="text/javascript">
     //分页
     $("#page").paging({
-        pageNo:3,  /*当前选中的是哪一页*/
-        totalPage: 15, /*共多少页*/
-        totalSize: 300,/*共多少条记录*/
+        pageNo: ${information.currentPage},  /*当前选中的是哪一页*/
+        totalPage: Math.ceil(${sum/15}), /*共多少页*/
+        totalSize: ${sum},/*共多少条记录*/
         callback: function(num) {
-            console.log(num);
+            $(window).attr('location', "${pageContext.request.contextPath}/WebInformationServlet?id=${id}&&page=" + num);
         }
     })
 </script>

@@ -5,7 +5,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.jfrao.domain.WebInformation" table="webInformation">
+    <class name="com.jfrao.domain.WebInformation" table="WebInformation">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
@@ -15,6 +15,5 @@
         <property name="type" column="type"/>
         <property name="context" column="context"/>
         <property name="source" column="source"/>
-
     </class>
 </hibernate-mapping>
