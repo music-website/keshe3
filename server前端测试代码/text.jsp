@@ -42,7 +42,7 @@
             <hr/>
             <div id="text_content">
                 1234
-                <%String context = "context/" + request.getParameter("context"); %>
+                <%String context = "context/" + request.getParameter("type") + request.getParameter("context"); %>
                 <jsp:include page="<%=context%>"/>
                 
             </div>

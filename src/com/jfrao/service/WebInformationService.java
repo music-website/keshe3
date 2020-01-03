@@ -16,14 +16,14 @@ public class WebInformationService {
 //        return information;
 //    }
 
-    private String GetType(Integer id){
+    public String GetType(Integer id){
         String type = null;
         switch (id){
-            case 0 : type = "行业活动"; break;
-            case 1 : type = "采购信息"; break;
-            case 2 : type = "政策法规"; break;
-            case 3 : type = "招标信息"; break;
-            case 4 : type = "行业新闻"; break;
+            case 0 : type = "hyhd"; break;//行业活动
+            case 1 : type = "cgxx"; break;//采购信息
+            case 2 : type = "zcfg"; break;//政策法规
+            case 3 : type = "cjgg"; break;//招标信息
+            case 4 : type = "hyxw"; break;//行业新闻
         }
         return type;
     }

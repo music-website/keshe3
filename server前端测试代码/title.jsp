@@ -26,7 +26,7 @@
             </c:if>
             <c:forEach items="${information.currentTitle}" var="info">
                 <li>
-                    <a href="${pageContext.request.contextPath}/text.jsp?date=${info.date}&source=${info.source}&context=${info.context}">${info.title}</a>
+                    <a href="${pageContext.request.contextPath}/text.jsp?date=${info.date}&source=${info.source}&context=${info.context}" methods="POST">${info.title}</a>
                 </li>
             </c:forEach>
         </ul>

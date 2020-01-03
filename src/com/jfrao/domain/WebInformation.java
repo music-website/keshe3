@@ -11,7 +11,7 @@ public class WebInformation {
 
     private Integer id;
     private String title;
-    private Date date;
+    private String date;
     private String type;
     private String context;
     private String source;

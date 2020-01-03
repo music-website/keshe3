@@ -30,7 +30,7 @@ public class WebInformationServlet extends HttpServlet {
         }
         PageList pageLists = webInformationService.GetPageList(page, id);
         Long sum = webInformationService.getSum(id);
-
+        req.setAttribute("type", webInformationService.GetType(id));
         req.setAttribute("information", pageLists);
         req.setAttribute("sum", sum);
         req.setAttribute("id", id);
